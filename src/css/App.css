@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+:root {
+  --fundo-azul: #01a5f4;
+  --botao1: #e7b83b;
+  --botao2: #fbc501;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.botao1 {
+  animation-name: botao1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-color: var(--botao1);
+  color: white;
+  text-shadow: #282c34 1px 1px 4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 10vh;
+  width: 20vw;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: none;
+  top: 47vh;
+  position: absolute;
+  font-family: "League Gothic", sans-serif;
+  font-size: 6vh;
+}
+
+.botao1:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+  background-color: white;
+  color: var(--botao1);
+  border: 3px var(--botao1);
+  border-style: solid;
+  text-shadow: none;
+}
+
+
+@keyframes botao1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes rotacao {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
+
+.botao2 {
+  background-color: var(--botao2);
+}
+
+body {
+  background: url("../img/background amarelo.png");
+}
+
+.div-logo {
+  background-color: white;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  position:sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.div-azul {
+  display: grid;
+  background-color: var(--fundo-azul);
+  height: 45vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0em 0em;
+  grid-template-areas: "livro conteudo";
+}
+
+.galasFeios {
+  display: flex;
+  height: 6vh;
+  margin-left: 2rem;
+}
+
+.livro {
+  animation-name: botao1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  position: absolute;
+  height: 70vh;
+  grid-area: livro;
+  z-index: 2;
+  left: 10vw;
+}
+
+.livro:hover {
+  animation-play-state: paused;
+}
+
+.conteudo {
+  grid-area: conteudo;
+  font-family: "League Gothic", sans-serif;
+}
+
+.conteudo h1{
+  font-size: 6rem;
+}
+
+.conteudo h1 span{
+  
+  color: var(--botao1);
+}
+
+.conteudo h2{
+  font-weight: 100;
+  font-size: 2rem;
+  width: 40vw;
+}
