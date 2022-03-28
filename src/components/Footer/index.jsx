@@ -46,16 +46,7 @@ export default function Footer(props) {
             <img src={Youtube} className="youtube" />
           </div>
         </form>
-        <div
-          style={{
-            backgroundColor: "white",
-            width: "100%",
-            height: "3vh",
-            textAlign: "end",
-            bottom: "0vh",
-            position: "relative",
-            marginTop: "-55vh",
-          }}
+        <div className='copyright'
         >
           Landing page feita por @VickSiebra
         </div>
