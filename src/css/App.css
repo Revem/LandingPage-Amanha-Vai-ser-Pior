@@ -306,6 +306,20 @@ textarea {
     height: 40vh;
     left: 7vw;
   }
+  .botao2 {
+    background-color: var(--botao2);
+    border-radius: 50px;
+    border: none;
+    position: flex;
+    right: 15vh;
+    text-shadow: 1px 1px black;
+    width: 50vw;
+    font-size: 4rem;
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    bottom: -60vh;
+    transition: 0.3s;
+  }
   .div-azul {
     height: 95vh;
     grid-template-columns: 1fr;
@@ -371,6 +385,7 @@ textarea {
   }
   .socialmedia {
     display: inline-flex;
+    margin-bottom: -30vh;
   }
   .contato {
     bottom: 10vh;
