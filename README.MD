@@ -1,6 +1,6 @@
 # LandingPage AMANHÃ VAI SER PIOR
 
-Este é um projeto de uma Landing Page para simular um projeto real com previsões de data de entrega e implantações de tecnologias.
+Este é um projeto de uma Landing Page para simular um projeto real com previsões de data de entrega e implementações de tecnologias que estive estudando.
 
 ## Tecnologias
 
